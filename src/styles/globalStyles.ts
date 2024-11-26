@@ -21,6 +21,21 @@ export const GlobalStyles = createGlobalStyle`
 
   /* Layout */
 
+  article {
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr);
+  }
+ 
+  .workImg.container {
+    grid-column: 4/9; 
+    object-fit: cover; 
+  }
+
+  .workImg img {
+    width: 100%; 
+    object-fit: cover; 
+  }
+
   ul {
   list-style: none; 
   }

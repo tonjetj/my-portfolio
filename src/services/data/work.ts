@@ -1,3 +1,5 @@
+import galactic_gamers from "../../assets/images/galactic-gamers.png";
+
 export type WorkData = {
   id: number;
   title: string;
@@ -48,9 +50,9 @@ export const WorkList: WorkData[] = [
     title: "Galactic Gamers",
     description:
       "Student assignment for a course on Gokstad Akademiet. Site is developed with HTML and CSS.",
-    img: "",
+    img: galactic_gamers,
     demoUrl: "https://galactic-gamers.netlify.app",
-    githubUrl: "",
+    githubUrl: "https://github.com/tonjetj/galactic-gamers",
     figmaUrlDesktop: "",
     figmaUrlMobile: "",
     languages: ["HTML", "CSS"],

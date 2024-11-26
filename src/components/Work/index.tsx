@@ -3,12 +3,12 @@ import { WorkList } from "../../services/data/work.ts";
 
 const Work: React.FC = () => {
   return (
-    <section aria-label='My work'>
+    <section aria-label='My work' id='work'>
       {WorkList.slice()
         .reverse()
         .map((work) => (
           <article key={work.id} aria-labelledby={`work-number-${work.id}`}>
-            <div>
+            <div className='copy'>
               <div>
                 <h1 id={`work-number-${work.id}`}>{work.title}</h1>
                 <p>{work.description}</p>
@@ -84,8 +84,8 @@ const Work: React.FC = () => {
               </div>
             </div>
 
-            <div>
-              <img src={work.img} alt={work.title} />
+            <div className='workImg container'>
+              <img src={work.img} alt={`Displays ${work.title}`} />
             </div>
           </article>
         ))}
