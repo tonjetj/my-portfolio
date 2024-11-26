@@ -17,7 +17,7 @@ export const WorkList: WorkData[] = [
     id: 0,
     title: "Findings",
     description:
-      "Findings is a website for an online NFT auction, where you can purchase and sell unique NFTs. The site is minimalistic with a dark yet vibrant color palette. Built with HTML, JavaScript, SASS and Bootstrap v5.2. The site is deployed on Netlify.",
+      "Findings is a website for an online NFT auction, where you can purchase and sell unique NFTs. The site is minimalistic with a dark yet vibrant color palette.",
     img: "",
     demoUrl: "",
     githubUrl: "",
@@ -25,7 +25,7 @@ export const WorkList: WorkData[] = [
     figmaUrlMobile: "",
     languages: ["HTML", "JavaScript"],
     frameworks: ["SASS", "Bootstrap v5.2"],
-    technologies: ["VS Code"],
+    technologies: ["VS Code", "Netlify"],
   },
   {
     id: 1,
@@ -55,6 +55,6 @@ export const WorkList: WorkData[] = [
     figmaUrlMobile: "",
     languages: ["HTML", "CSS"],
     frameworks: [],
-    technologies: ["Photoshop"],
+    technologies: ["VS Code", "Photoshop", "Netlify"],
   },
 ];
