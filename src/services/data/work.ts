@@ -1,4 +1,4 @@
-export type Work = {
+export type WorkData = {
   id: number;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ export type Work = {
   technologies: string[];
 };
 
-export const WorkList: Work[] = [
+export const WorkList: WorkData[] = [
   {
     id: 0,
     title: "Findings",
@@ -25,45 +25,36 @@ export const WorkList: Work[] = [
     figmaUrlMobile: "",
     languages: ["HTML", "JavaScript"],
     frameworks: ["SASS", "Bootstrap v5.2"],
-    technologies: [""],
+    technologies: ["VS Code"],
   },
   {
     id: 1,
-    title: "",
-    description: "",
+    title: "Goodreads Redesign",
+    description:
+      "Redesign assignment on Goodreads for a UX-design course at Gokstad Akademiet.",
     img: "",
     demoUrl: "",
     githubUrl: "",
-    figmaUrlDesktop: "",
-    figmaUrlMobile: "",
-    languages: ["HTML", "JavaScript"],
-    frameworks: ["SASS", "Bootstrap v5.2"],
-    technologies: [""],
+    figmaUrlDesktop:
+      "https://www.figma.com/proto/tYrqaW3Sx2vxOC3ivc5WBr/Redesign-Goodreads?node-id=685-7165&t=PprxBHtj7woF7Osl-1",
+    figmaUrlMobile:
+      "https://www.figma.com/proto/tYrqaW3Sx2vxOC3ivc5WBr/Redesign-Goodreads?node-id=273-28&t=PprxBHtj7woF7Osl-1&starting-point-node-id=273%3A28&show-proto-sidebar=1",
+    languages: [],
+    frameworks: [],
+    technologies: ["Photoshop", "Adobe Illustrator", "Figma"],
   },
   {
     id: 2,
-    title: "",
-    description: "",
+    title: "Galactic Gamers",
+    description:
+      "Student assignment for a course on Gokstad Akademiet. Site is developed with HTML and CSS.",
     img: "",
-    demoUrl: "",
+    demoUrl: "https://galactic-gamers.netlify.app",
     githubUrl: "",
     figmaUrlDesktop: "",
     figmaUrlMobile: "",
-    languages: ["HTML", "JavaScript"],
-    frameworks: ["SASS", "Bootstrap v5.2"],
-    technologies: [""],
-  },
-  {
-    id: 3,
-    title: "",
-    description: "",
-    img: "",
-    demoUrl: "",
-    githubUrl: "",
-    figmaUrlDesktop: "",
-    figmaUrlMobile: "",
-    languages: ["HTML", "JavaScript"],
-    frameworks: ["SASS", "Bootstrap v5.2"],
-    technologies: [""],
+    languages: ["HTML", "CSS"],
+    frameworks: [],
+    technologies: ["Photoshop"],
   },
 ];
