@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
   .tag.container {
   display: flex; 
   flex-wrap: wrap; 
-  width: 500px; 
+  width: 400px; 
   gap: 10px; 
   }
 
@@ -51,6 +51,16 @@ export const GlobalStyles = createGlobalStyle`
 
   .tag.container li:nth-child(4) {
     background-color: #f2bb05;
+    color: #000;
+  }
+
+  .tag.container li:nth-child(5) {
+    background-color: #83d196;
+    color: #000;
+  }
+
+  .tag.container li:nth-child(6) {
+    background-color: #ffb1ce;
     color: #000;
   }
 
