@@ -1,5 +1,6 @@
 import React from "react";
 import { WorkList } from "../../services/data/work.ts";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const Work: React.FC = () => {
   return (
@@ -48,7 +49,7 @@ const Work: React.FC = () => {
                     rel='noopener noreferrer'
                     className='btn link'
                   >
-                    Live demo
+                    Live demo <BsArrowUpRight />
                   </a>
                 )}
                 {work.githubUrl && (
@@ -58,7 +59,7 @@ const Work: React.FC = () => {
                     rel='noopener noreferrer'
                     className='btn link'
                   >
-                    Github
+                    Github <BsArrowUpRight />
                   </a>
                 )}
                 {work.figmaUrlDesktop && (
@@ -68,7 +69,7 @@ const Work: React.FC = () => {
                     rel='noopener noreferrer'
                     className='btn link'
                   >
-                    Prototype desktop
+                    Prototype desktop <BsArrowUpRight />
                   </a>
                 )}
                 {work.figmaUrlMobile && (
@@ -78,14 +79,19 @@ const Work: React.FC = () => {
                     rel='noopener noreferrer'
                     className='btn link'
                   >
-                    Prototype mobile
+                    Prototype mobile <BsArrowUpRight />
                   </a>
                 )}
               </div>
             </div>
 
             <div className='workImg container'>
-              <img src={work.img} alt={`Displays ${work.title}`} />
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <img src={work.img} alt={work.altText} />
             </div>
           </article>
         ))}
