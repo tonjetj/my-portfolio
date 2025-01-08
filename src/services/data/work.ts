@@ -91,7 +91,7 @@ export const WorkList: WorkData[] = [
   //   demoUrl: "",
   //   githubUrl: "",
   //   figmaUrlDesktop:
-  //     "https://www.figma.com/proto/SIetGABbZ0ajgx02T5PkTq/Eksamen---Design-og-brukergrensesnitt-1?node-id=94-318&t=OgZTxWOidBHEjEin-1",
+  //     "",
   //   figmaUrlMobile: "",
   //   languages: [],
   //   frameworks: [],
@@ -104,8 +104,8 @@ export const WorkList: WorkData[] = [
   //   description:
   //     "This was my student exam at Gokstad Akademiet in HTML & CSS. The task was to code a website for a culture festival. I've made sure to give my code a semantical structure, follow the DRY principle, and making it more inclusive and user friendly with usage of necessary Aria attributes and media queries.",
   //   img: sildajazz,
-  //   demoUrl: "https://sildajazzen.netlify.app",
-  //   githubUrl: "https://github.com/tonjetj/html-css-exam",
+  //   demoUrl: "",
+  //   githubUrl: "",
   //   figmaUrlDesktop: "",
   //   figmaUrlMobile: "",
   //   languages: ["HTML", "CSS"],
