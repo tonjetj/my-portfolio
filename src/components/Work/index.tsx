@@ -9,6 +9,7 @@ const Work: React.FC = () => {
         .reverse()
         .map((work) => (
           <article key={work.id} aria-labelledby={`work-number-${work.id}`}>
+            <div className='work container'>
             <div className='copy'>
               <div>
                 <h1 id={`work-number-${work.id}`}>{work.title}</h1>
@@ -84,13 +85,9 @@ const Work: React.FC = () => {
                 )}
               </div>
             </div>
+            </div>
 
             <div className='workImg container'>
-              <div>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
               <img src={work.img} alt={work.altText} />
             </div>
           </article>

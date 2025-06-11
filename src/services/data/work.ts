@@ -2,7 +2,9 @@ import galactic_gamers from "../../assets/images/galactic-gamers.jpg";
 import goodreads from "../../assets/images/goodreads.jpg";
 import findings from "../../assets/images/findings.png";
 import conscious from "../../assets/images/conscious.png";
-// import sildajazz from "../../assets/images/sildajazz.jpg";
+import sildajazz from "../../assets/images/sildajazz.jpg";
+import tind_bygg from "../../assets/images/tind-bygg.jpg";
+// import tind_bygg_1 from "../../assets/images/tind-bygg-1.jpg";
 
 export type WorkData = {
   id: number;
@@ -82,35 +84,50 @@ export const WorkList: WorkData[] = [
     technologies: ["VS Code", "Photoshop", "Netlify"],
     altText: "Galactic Gamers homepage.",
   },
-  // {
-  //   id: 4,
-  //   title: "Design & user interface exam",
-  //   description:
-  //     "This was my student exam at Gokstad Akademiet for UX design. I had to create a prototype for desktop in Figma and redesign Matoma's homepage, www.hakunamatoma.com. Good user experience and UI were the two major focal points.  *All artwork and product photos in the design belongs to Matoma. ",
-  //   img: "",
-  //   demoUrl: "",
-  //   githubUrl: "",
-  //   figmaUrlDesktop:
-  //     "",
-  //   figmaUrlMobile: "",
-  //   languages: [],
-  //   frameworks: [],
-  //   technologies: ["Figma", "Photoshop"],
-  //   altText: "Redesign for Hakunamatoma",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Exam in HTML & CSS",
-  //   description:
-  //     "This was my student exam at Gokstad Akademiet in HTML & CSS. The task was to code a website for a culture festival. I've made sure to give my code a semantical structure, follow the DRY principle, and making it more inclusive and user friendly with usage of necessary Aria attributes and media queries.",
-  //   img: sildajazz,
-  //   demoUrl: "",
-  //   githubUrl: "",
-  //   figmaUrlDesktop: "",
-  //   figmaUrlMobile: "",
-  //   languages: ["HTML", "CSS"],
-  //   frameworks: [],
-  //   technologies: ["Photoshop", "Netlify"],
-  //   altText: "A culture festival webpage called 'Sildajazzen'.",
-  // },
+  {
+    id: 4,
+    title: "Design & user interface exam",
+    description:
+      "This was my student exam at Gokstad Akademiet for UX design. I had to create a prototype for desktop in Figma and redesign Matoma's homepage, www.hakunamatoma.com. Good user experience and UI were the two major focal points.  *All artwork and product photos in the design belongs to Matoma. ",
+    img: "",
+    demoUrl: "",
+    githubUrl: "",
+    figmaUrlDesktop:
+      "https://www.figma.com/proto/SIetGABbZ0ajgx02T5PkTq/Eksamen---Design-og-brukergrensesnitt-1?node-id=94-318&t=OgZTxWOidBHEjEin-1",
+    figmaUrlMobile: "",
+    languages: [],
+    frameworks: [],
+    technologies: ["Figma", "Photoshop"],
+    altText: "Redesign for Hakunamatoma",
+  },
+  {
+    id: 5,
+    title: "Exam in HTML & CSS",
+    description:
+      "This was my student exam at Gokstad Akademiet in HTML & CSS. The task was to code a website for a culture festival. I've made sure to give my code a semantical structure, follow the DRY principle, and making it more inclusive and user friendly with usage of necessary Aria attributes and media queries.",
+    img: sildajazz,
+    demoUrl: "https://sildajazzen.netlify.app",
+    githubUrl: "https://github.com/tonjetj/html-css-exam",
+    figmaUrlDesktop: "",
+    figmaUrlMobile: "",
+    languages: ["HTML", "CSS"],
+    frameworks: [],
+    technologies: ["Photoshop", "Netlify"],
+    altText: "A culture festival webpage called 'Sildajazzen'.",
+  },
+  {
+    id: 6,
+    title: "Exam in Websites & Methodology",
+    description:
+      "This was my student exam at Gokstad Akademiet in Websites & Methodology. The task was to renew the website of the architect bureau Tind Bygg AS. I've made sure to modernize and give the site a stronger visual identity, but made sure to respect the hierarchal structure of their current site. New solutions to sort results has also been implemented. The site is made sure to follow user friendly solutions, respecting WCAG demands and add SEO description for each page.",
+    img: tind_bygg,
+    demoUrl: "https://tindbygg.framer.website/",
+    githubUrl: "",
+    figmaUrlDesktop: "",
+    figmaUrlMobile: "",
+    languages: [],
+    frameworks: ["Framer"],
+    technologies: ["Photoshop"],
+    altText: "A new design solution for architect bureau called 'Tind Bygg'.",
+  },
 ];

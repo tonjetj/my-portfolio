@@ -1,13 +1,13 @@
 export const fontFamily = {
-  headline: "Montserrat, sans-serif",
+  headline: "Space Grotesk, sans-serif",
   copy: "Inconsolata, sans-serif",
 };
 
 export const typography = {
   h1: {
     fontFamily: fontFamily.headline,
-    fontWeight: "bold",
-    fontSize: "100px",
+    fontWeight: "400",
+    fontSize: "60px",
   },
   h2: {
     fontFamily: fontFamily.headline,

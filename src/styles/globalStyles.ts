@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { fonts } from "./typography/index.ts";
 
 export const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -19,35 +19,54 @@ html {
   }
 
   h1 {
-  font-size: 45px; 
+  ${fonts.typography.h1};
   }
+
+  h2 {
+  ${fonts.typography.h2}
+  };
 
   p, a, li {
   font-family: ${fonts.fontFamily.copy};
-  }
+  };
 
   /* Layout */
 
+  main {
+    margin: 56px auto 0; 
+    display: flex; 
+    flex-flow: column nowrap; 
+    gap: 100px; 
+  }
+
   article {
-    display: grid; 
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(4, 1fr); 
+    display: flex; 
+    flex-flow: row nowrap;
     height: 100vh; 
-    background-color: lightblue; 
+    justify-content: space-between; 
+    align-items: stretch; 
     border-bottom: 1px solid black;  
   }
 
-  .copy, .workImg.container {
-    grid-row: 2/4; 
+  .work.container {
+    width: 50%;
+    display: flex; 
+    align-items: center; 
+
+  }
+
+  .copy.container, .workImg.container {
+    height: 100%; 
   }
 
   .copy {
-    grid-column: 2/5;
+    height: 80%; 
+    width: 100%; 
     margin: 0 auto; 
     display: flex; 
-    width: 100%; 
-    flex-direction: column; 
-    justify-content: space-between;
+    flex-flow: column nowrap; 
+    padding: 50px 100px; 
+    justify-content: center; 
     gap: 50px; 
   }
 
@@ -56,54 +75,17 @@ html {
   }
  
   .workImg.container {
-    grid-column: 6/10; 
-    border: 1px solid black; 
-    height: 462px; 
     display: flex; 
-    justify-content: flex-end; 
-    flex-direction: column; 
+    justify-content: center; 
+    width: 50%; 
     margin: 0; 
     padding: 0; 
-    border-radius: 15px; 
-    background-color: #fff; 
   }
 
-  .workImg.container div {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    width: 20px; 
-    height: 20px;
-    border-radius: 50px;  
-    width: 100%; 
-    padding: 0 20px; 
-    margin-bottom: 5px; 
-    justify-content: flex-end;
-    gap: 20px; 
-
-  }
-
-    .workImg.container div span {
-      width: 15px; 
-      height: 15px; 
-      border-radius: 50px; 
-      justify-content: flex-end; 
-    }
-
-    .workImg.container div span:nth-child(1) {
-      background-color: #83d196; 
-    }
-    .workImg.container div span:nth-child(2) {
-      background-color: #f2bb05; 
-    }    .workImg.container div span:nth-child(3) {
-      background-color: #ff5b22; 
-    }
   .workImg img {
-    height: 430px; 
-    min-width: 100%; 
+    width: 100%; 
+    height: 100%; 
     object-fit: cover; 
-    border-top: 1px solid black; 
-    border-radius: 0 0 14px 14px; 
   }
 
   ul {
@@ -115,8 +97,9 @@ html {
 
   header {
     background-color: pink; 
-    grid-template-columns: repeat(10, 1fr);
-    display: grid; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px 50px; 
     width: 100%; 
     position: fixed; 
     top: 0; 
@@ -125,10 +108,6 @@ html {
   // /* Nav */
 
   nav {
-  grid-column: 2/10; 
-  justify-content: space-between;  
-  display: flex; 
-  align-items: center; 
   }
 
   nav ul {
@@ -138,7 +117,7 @@ html {
   }
 
   nav ul li {
-    padding: 20px; 
+    height: 100%; 
   }
 
   /* Tags */
@@ -151,7 +130,7 @@ html {
   }
 
   .tag.container li:nth-child(1) {
-    background-color: #ff5b22;
+    background-color:rgb(247, 163, 135);
     color: #000; 
   }
 
@@ -180,12 +159,22 @@ html {
     color: #000;
   }
 
+  .tag.container li:nth-child(7) {
+    background-color:rgb(182, 177, 255);
+    color: #000;
+  }
+
+
   .tags {
     border-radius: 15px; 
     padding: 5px 20px; 
     width: auto; 
     text-align: center; 
     font-size: 15px; 
+  }
+
+  .tags.skills {
+    border: 1px solid black; 
   }
 
 
@@ -197,17 +186,21 @@ html {
 }
 
 .btn.link {
-    background-color: #f8fcec;
+    background-color: white;
     color: #1d005b; 
     text-decoration: none; 
     text-align: center; 
     padding: 15px 20px; 
-    max-width: 220px; 
     border: 1px solid; 
 
     &:hover {
       color: #f8fcec;
       background-color: #1d005b; 
+
+      :nth-child(1){
+        transform: scale(1.14);
+        transition: ease 0.2s; 
+      }
     }
 }
 

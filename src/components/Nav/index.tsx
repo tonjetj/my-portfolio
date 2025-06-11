@@ -3,11 +3,16 @@ import React from "react";
 const Nav: React.FC = () => {
   return (
     <nav>
-      <p>Tonje T. Jenssen</p>
       <ul>
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li>
+          <a href='/#about'>About</a>
+        </li>
+        <li>
+          <a href='/#work'>Work</a>
+        </li>
+        <li>
+          <a href='/#contact'>Contact</a>
+        </li>
       </ul>
     </nav>
   );
