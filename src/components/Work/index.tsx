@@ -1,97 +1,41 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { WorkList } from "../../services/data/work.ts";
-import { BsArrowUpRight } from "react-icons/bs";
+import { HiArrowRight } from "react-icons/hi2";
 
 const Work: React.FC = () => {
+  const variants = {
+    hidden: { opacity: 0, y: -100 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
-    <section aria-label='My work' id='work'>
-      {WorkList.slice()
-        .reverse()
-        .map((work) => (
-          <article key={work.id} aria-labelledby={`work-number-${work.id}`}>
-            <div className='work container'>
-            <div className='copy'>
-              <div>
-                <h1 id={`work-number-${work.id}`}>{work.title}</h1>
-                <p>{work.description}</p>
-              </div>
+    <section aria-labelledby='my-selected-work' id='work' className='container'>
+      <h1 id='my-selected-work'>Work</h1>
 
-              <div>
-                <ul
-                  className='tag container'
-                  aria-label={`Tags showing technologies, frameworks and languages used in ${work.title}`}
-                >
-                  {work.languages.map((language, index) => (
-                    <li key={index} className='tags' aria-label='Language'>
-                      {language}
-                    </li>
-                  ))}
-                  {work.frameworks.map((framework, index) => (
-                    <li key={index} className='tags' aria-label='Framework'>
-                      {framework}
-                    </li>
-                  ))}
-                  {work.technologies.map((tech, index) => (
-                    <li key={index} className='tags' aria-label='Technology'>
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div
-                className='link container'
-                aria-label={`Hyperlinks for ${work.title}`}
-              >
-                {work.demoUrl && (
-                  <a
-                    href={work.demoUrl}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn link'
-                  >
-                    Live demo <BsArrowUpRight />
-                  </a>
-                )}
-                {work.githubUrl && (
-                  <a
-                    href={work.githubUrl}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn link'
-                  >
-                    Github <BsArrowUpRight />
-                  </a>
-                )}
-                {work.figmaUrlDesktop && (
-                  <a
-                    href={work.figmaUrlDesktop}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn link'
-                  >
-                    Prototype desktop <BsArrowUpRight />
-                  </a>
-                )}
-                {work.figmaUrlMobile && (
-                  <a
-                    href={work.figmaUrlMobile}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='btn link'
-                  >
-                    Prototype mobile <BsArrowUpRight />
-                  </a>
-                )}
-              </div>
-            </div>
-            </div>
-
-            <div className='workImg container'>
+      <div className='selectedWork'>
+        {WorkList.slice()
+          .reverse()
+          .map((work) => (
+            <motion.article
+              key={work.id}
+              aria-labelledby={`work-number-${work.id}`}
+              className='workCards child'
+              variants={variants}
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6 }}
+              aria-label={work.title}
+            >
               <img src={work.img} alt={work.altText} />
-            </div>
-          </article>
-        ))}
+
+              <h2 id={`work-number-${work.id}`}>{work.title}</h2>
+              {/* <p>{work.description}</p> */}
+              <button className='readMore'>Go to project <HiArrowRight /></button>
+            </motion.article>
+          ))}
+      </div>
     </section>
   );
 };

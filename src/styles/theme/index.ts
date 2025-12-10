@@ -4,10 +4,12 @@ export const colors = {
 };
 
 export const tagColors = {
-  one: "#013dsa",
-  two: "#fcf3e3",
-  three: "#bdd3ce",
-  four: "#708c69",
+  one: "rgb(250, 130, 100)",
+  two: "#aee6ed",
+  three: "#dbbbff",
+  four: "#f2bb05",
+  five: "#83d196",
+  six: "#ffb1ce",
 };
 
 export const theme = {

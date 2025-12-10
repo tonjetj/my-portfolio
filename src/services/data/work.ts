@@ -1,9 +1,10 @@
 import galactic_gamers from "../../assets/images/galactic-gamers.jpg";
 import goodreads from "../../assets/images/goodreads.jpg";
-import findings from "../../assets/images/findings.png";
-import conscious from "../../assets/images/conscious.png";
 import sildajazz from "../../assets/images/sildajazz.jpg";
 import tind_bygg from "../../assets/images/tind-bygg.jpg";
+import matoma from "../../assets/images/matoma.png";
+import hm_eksamen from "../../assets/images/hm_eksamen.png";
+import bobler from "../../assets/images/bobler.jpg";
 // import tind_bygg_1 from "../../assets/images/tind-bygg-1.jpg";
 
 export type WorkData = {
@@ -19,41 +20,12 @@ export type WorkData = {
   frameworks: string[];
   technologies: string[];
   altText: string;
+  pillText: string;
 };
 
 export const WorkList: WorkData[] = [
   {
-    id: 0,
-    title: "Conscious Coffee",
-    description:
-      "This was a student assignment for a HTML & CSS course at Noroff. Conscious Coffee is a website selling ecologically produced coffee. ",
-    img: conscious,
-    demoUrl: "https://consciousisthecoffee.netlify.app",
-    githubUrl: "https://github.com/tonjetj/conscious-coffee",
-    figmaUrlDesktop: "",
-    figmaUrlMobile: "",
-    languages: ["HTML", "CSS", "JavaScript"],
-    frameworks: [],
-    technologies: ["VS Code", "Netlify"],
-    altText: "Homepage of Conscious Coffee.",
-  },
-  {
     id: 1,
-    title: "Findings",
-    description:
-      "Findings is a website for an online NFT auction, where you can purchase and sell unique NFTs. The site is minimalistic with a dark yet vibrant color palette.",
-    img: findings,
-    demoUrl: "",
-    githubUrl: "https://github.com/tonjetj/2022-semester-project",
-    figmaUrlDesktop: "",
-    figmaUrlMobile: "",
-    languages: ["HTML", "JavaScript"],
-    frameworks: ["SASS", "Bootstrap v5.2"],
-    technologies: ["VS Code", "Netlify"],
-    altText: "Homepage of Findings.",
-  },
-  {
-    id: 2,
     title: "Goodreads Redesign",
     description:
       "Redesign assignment on Goodreads for a UX-design course at Gokstad Akademiet.",
@@ -68,9 +40,10 @@ export const WorkList: WorkData[] = [
     frameworks: [],
     technologies: ["Photoshop", "Adobe Illustrator", "Figma"],
     altText: "Desktop homepage for redesign of Goodreads in Figma prototype",
+    pillText: "Redesign and make prototype in Figma",
   },
   {
-    id: 3,
+    id: 2,
     title: "Galactic Gamers",
     description:
       "Student assignment in HTML & CSS at Gokstad Akademiet. The assignment was to create a homepage for a fictive e-sports team called Galactic Gamers. They wanted a futuristic and responsive website, displaying their future tournaments for people to keep up. This website was carefully thought out, making sure semantics and DRY principle were followed.  ",
@@ -83,13 +56,14 @@ export const WorkList: WorkData[] = [
     frameworks: [],
     technologies: ["VS Code", "Photoshop", "Netlify"],
     altText: "Galactic Gamers homepage.",
+    pillText: "",
   },
   {
-    id: 4,
+    id: 3,
     title: "Design & user interface exam",
     description:
       "This was my student exam at Gokstad Akademiet for UX design. I had to create a prototype for desktop in Figma and redesign Matoma's homepage, www.hakunamatoma.com. Good user experience and UI were the two major focal points.  *All artwork and product photos in the design belongs to Matoma. ",
-    img: "",
+    img: matoma,
     demoUrl: "",
     githubUrl: "",
     figmaUrlDesktop:
@@ -99,9 +73,10 @@ export const WorkList: WorkData[] = [
     frameworks: [],
     technologies: ["Figma", "Photoshop"],
     altText: "Redesign for Hakunamatoma",
+    pillText: "",
   },
   {
-    id: 5,
+    id: 4,
     title: "Exam in HTML & CSS",
     description:
       "This was my student exam at Gokstad Akademiet in HTML & CSS. The task was to code a website for a culture festival. I've made sure to give my code a semantical structure, follow the DRY principle, and making it more inclusive and user friendly with usage of necessary Aria attributes and media queries.",
@@ -114,9 +89,10 @@ export const WorkList: WorkData[] = [
     frameworks: [],
     technologies: ["Photoshop", "Netlify"],
     altText: "A culture festival webpage called 'Sildajazzen'.",
+    pillText: "",
   },
   {
-    id: 6,
+    id: 5,
     title: "Exam in Websites & Methodology",
     description:
       "This was my student exam at Gokstad Akademiet in Websites & Methodology. The task was to renew the website of the architect bureau Tind Bygg AS. I've made sure to modernize and give the site a stronger visual identity, but made sure to respect the hierarchal structure of their current site. New solutions to sort results has also been implemented. The site is made sure to follow user friendly solutions, respecting WCAG demands and add SEO description for each page.",
@@ -129,5 +105,38 @@ export const WorkList: WorkData[] = [
     frameworks: ["Framer"],
     technologies: ["Photoshop"],
     altText: "A new design solution for architect bureau called 'Tind Bygg'.",
+    pillText: "",
+  },
+  {
+    id: 6,
+    title: "Exam in Design & UI",
+    description:
+      "This was my student exam at Gokstad Akademiet in Websites & Methodology. The task was to renew the website of the architect bureau Tind Bygg AS. I've made sure to modernize and give the site a stronger visual identity, but made sure to respect the hierarchal structure of their current site. New solutions to sort results has also been implemented. The site is made sure to follow user friendly solutions, respecting WCAG demands and add SEO description for each page.",
+    img: hm_eksamen,
+    demoUrl: "https://tindbygg.framer.website/",
+    githubUrl: "",
+    figmaUrlDesktop: "",
+    figmaUrlMobile: "",
+    languages: [],
+    frameworks: ["Framer"],
+    technologies: ["Photoshop"],
+    altText: "A new design solution for architect bureau called 'Tind Bygg'.",
+    pillText: "",
+  },
+  {
+    id: 7,
+    title: "Exam in Design & UI",
+    description:
+      "This was my student exam at Gokstad Akademiet in Websites & Methodology. The task was to renew the website of the architect bureau Tind Bygg AS. I've made sure to modernize and give the site a stronger visual identity, but made sure to respect the hierarchal structure of their current site. New solutions to sort results has also been implemented. The site is made sure to follow user friendly solutions, respecting WCAG demands and add SEO description for each page.",
+    img: bobler,
+    demoUrl: "https://tindbygg.framer.website/",
+    githubUrl: "",
+    figmaUrlDesktop: "",
+    figmaUrlMobile: "",
+    languages: [],
+    frameworks: ["Framer"],
+    technologies: ["Photoshop"],
+    altText: "A new design solution for architect bureau called 'Tind Bygg'.",
+    pillText: "",
   },
 ];

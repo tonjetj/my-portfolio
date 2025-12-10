@@ -5,7 +5,9 @@ const Nav: React.FC = () => {
     <nav>
       <ul>
         <li>
-          <a href='/#about'>About</a>
+          <a href='/#about' className='overlapping'>
+            About
+          </a>
         </li>
         <li>
           <a href='/#work'>Work</a>

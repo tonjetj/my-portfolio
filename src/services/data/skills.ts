@@ -1,14 +1,15 @@
 export type SkillsData = {
-  languages: string[];
-  frameworks: string[];
-  technologies: string[];
+  skill: string[];
 };
 
 export const SkillList: SkillsData[] = [
   {
-    languages: ["HTML", "CSS", "JavaScript"],
-    frameworks: ["React", "MUI"],
-    technologies: [
+    skill: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "MUI",
       "Photoshop",
       "Netlify",
       "Figma",

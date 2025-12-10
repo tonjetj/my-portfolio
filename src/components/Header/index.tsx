@@ -4,7 +4,7 @@ import Nav from "../Nav/index.tsx";
 const Header: React.FC = () => {
   return (
     <header>
-      <p>Tonje T. Jenssen</p>
+      <a href='#hero'>Tonje Jenssen</a>
       <Nav />
     </header>
   );
