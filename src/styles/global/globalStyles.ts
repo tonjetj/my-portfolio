@@ -4,10 +4,6 @@ import { fonts } from "./typography/index.ts";
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300..700&family=Funnel+Display:wght@300..800&display=swap');
 
-:root {
-  color-scheme: light dark; 
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -20,8 +16,8 @@ html {
 }
 
   body {
-    background-color: light-dark(#fffbf3ff, #05011dff); 
-    color: light-dark(#05011dff), #fffbf3ff);
+    background-color: #fffbf3ff; 
+    color: #05011dff;
   }
 
   h1 {
