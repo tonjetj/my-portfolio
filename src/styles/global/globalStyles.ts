@@ -129,31 +129,55 @@ html {
     flex-direction: column;
     grid-column: 2/16;
     width: 100%; 
-    height: 100%;
-    margin: 4rem auto; 
-    padding: 2rem 0rem; 
+    height: 100%; 
+    margin: 4rem auto 0rem; 
+    container-type: inline-size; 
   }
 
   .selectedWork {
-    width: 100%; 
-    display: flex; 
-    flex-flow: row wrap; 
-    justify-content: space-between; 
-    gap: 5rem 0rem;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 5rem; 
+    container-type: inline-size;
+    // width: 100%; 
+    // display: flex; 
+    // flex-flow: row wrap; 
+    // justify-content: space-between; 
   }
 
   .workCards {
-    width: 48%;  
+    display: flex; 
+    flex-flow: column; 
   }
-
+  
   .workCards img {
-    filter: saturate(110%);
-    width: 100%; 
-    height: 600px; 
-    background-repeat: no-repeat; 
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    display: block; 
+    object-fit: cover; 
+    // filter: saturate(110%);
+    // width: 100%; 
+    // height: 600px; 
+    // background-repeat: no-repeat; 
     border-radius: 20px; 
     border: 4px solid #000; 
     // cursor: pointer; 
+  }
+
+  .workContent {
+    flex: 1; 
+  }
+
+  .workTitle {
+    font-size: 3rem; 
+    line-height: 1.4; 
+    margin-block-end: 0.15rem; 
+  }
+
+  @container (inline-size > 900px){
+    .selectedWork {
+      grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    }
   }
 
   button {
