@@ -124,48 +124,66 @@ html {
 
 
   #work {
-    // background-color: green; 
     display: flex; 
     flex-direction: column;
     grid-column: 2/16;
     width: 100%; 
-    height: 100%; 
+    gap: 2rem; 
     margin: 4rem auto 0rem; 
     container-type: inline-size; 
   }
 
   .selectedWork {
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 5rem; 
-    container-type: inline-size;
-    // width: 100%; 
-    // display: flex; 
-    // flex-flow: row wrap; 
-    // justify-content: space-between; 
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: stretch;
+    gap: 2rem; 
+    }
 
-  .workCards {
+  .workList {
     display: flex; 
-    flex-flow: column; 
-  }
-  
-  .workCards img {
-    inline-size: 100%;
-    aspect-ratio: 16/9;
-    display: block; 
-    object-fit: cover; 
-    // filter: saturate(110%);
-    // width: 100%; 
-    // height: 600px; 
-    // background-repeat: no-repeat; 
-    border-radius: 20px; 
-    border: 4px solid #000; 
-    // cursor: pointer; 
+    flex-direction: column; 
+    gap: 20px;  
+    width: 100%; 
   }
 
-  .workContent {
-    flex: 1; 
+  .workPreview {
+  height: 800px; 
+  border-radius: 30px; 
+  // aspect-ratio: 1 / 1; 
+  }
+
+  .workPreview img {
+  border-radius: 30px; 
+  border: 4px solid black; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.workPreview img[src] {
+transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+
+  .workItem {
+    border: 4px solid #000; 
+    color: #000;
+    padding: 0.8rem 1.5rem; 
+    border-radius: 50px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    &:hover {
+      background-color: #000000; 
+      color: #fff; 
+      cursor: pointer; 
+      transition: 0.2s ease-in-out; 
+    }
   }
 
   .workTitle {
