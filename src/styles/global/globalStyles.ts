@@ -155,7 +155,7 @@ html {
 
   .workPreview img {
   border-radius: 30px; 
-  border: 4px solid black; 
+  border: 4px solid #000; 
   width: 100%; 
   height: 100%; 
   object-fit: cover; 
@@ -179,8 +179,8 @@ transition: opacity 0.3s ease;
     justify-content: space-between; 
     align-items: center; 
     &:hover {
-      background-color: #000000; 
-      color: #fff; 
+      background-color: #f2bb05; 
+      border: 4px solid #f2bb05; 
       cursor: pointer; 
       transition: 0.2s ease-in-out; 
     }
