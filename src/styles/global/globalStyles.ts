@@ -148,9 +148,10 @@ html {
   }
 
   .workPreview {
-  height: 800px; 
+  height: 600px; 
+  width: 100%; 
   border-radius: 30px; 
-  // aspect-ratio: 1 / 1; 
+  aspect-ratio: 16 / 9; 
   }
 
   .workPreview img {
@@ -158,7 +159,7 @@ html {
   border: 4px solid #000; 
   width: 100%; 
   height: 100%; 
-  object-fit: cover; 
+  object-fit: fill; 
   display: block; 
   opacity: 0;
   transition: opacity 0.3s ease;
