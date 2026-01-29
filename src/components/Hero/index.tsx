@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 const Hero: React.FC = () => {
-
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -19,13 +18,12 @@ const Hero: React.FC = () => {
           <p>
             <RoughNotation
               type='underline'
-              brackets={["bottom"]}
               show={true}
-              color='#1700ef'
+              color='#1800ef8c'
               padding={10}
-              strokeWidth={3}
+              strokeWidth={4}
               animationDuration={700}
-              animationDelay={500}
+              animationDelay={200}
               order={1}
             >
               User friendly
@@ -33,13 +31,12 @@ const Hero: React.FC = () => {
             development and{" "}
             <RoughNotation
               type='underline'
-              brackets={["bottom"]}
               show={true}
-              color='#1700ef'
+              color='#1800ef8c'
               padding={10}
-              strokeWidth={3}
+              strokeWidth={4}
               animationDuration={800}
-              animationDelay={400}
+              animationDelay={200}
               order={2}
             >
               design solutions

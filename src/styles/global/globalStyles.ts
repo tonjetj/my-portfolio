@@ -53,6 +53,7 @@ html {
 
   a {
     text-decoration: none;
+    color: #05011dff;
   }
 
   .tags {
@@ -62,7 +63,6 @@ html {
   /* Layout */
 
   main {
-    margin: 0 auto; 
     display: grid; 
     grid-template-columns: repeat(16, 1fr);
     // background-color: #fdd1d1ff; 
@@ -87,7 +87,7 @@ html {
     gap: 2rem; 
     align-items: center; 
     justify-content: center; 
-    padding-top: 6rem; 
+    padding-top: 4rem; 
   }
 
   #about {
@@ -193,19 +193,43 @@ html {
   }
 
   #contact {
-    background-color: #fae2ffff; 
-    flex-flow: row wrap; 
     border-radius: 30px; 
-    padding: 4rem; 
     grid-column: 2/16;
-    height: 50vh; 
-    margin: 0 auto 2rem; 
+    padding: 3rem; 
+    gap: 2rem; 
+    display: flex; 
+    justify-content: center; 
+    height: 100%; 
+    margin: 2rem auto 2rem;  
+    flex-flow: column; 
+  }
+
+  .contact {
+    display: flex; 
+    flex-direction: row; 
+    gap: 1.5rem;
+  }
+
+  .choice {
+    flex: 1; 
+    width: 100%;  
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color: #83d196;
+    padding: 20px; 
+    border-radius: 20px; 
+    color: #0d3d16ff;
+    &:hover {
+      transform: scale(1.025);
+      background-color: #0d3d16ff; 
+      color: #cfffcdff; 
+    }
   }
 
   ul {
   list-style: none; 
   }
-
 
   /* Header */
 
