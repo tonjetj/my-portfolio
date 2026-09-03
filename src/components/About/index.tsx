@@ -9,7 +9,7 @@ const About: React.FC = () => {
       <h2>Om meg</h2>
 
       <section id='om-meg-one'>
-        <p>Tonje</p>
+        {/* <p>Tonje</p>
         <div>
           <p>Liker å gå i natur </p>
         </div>
@@ -21,8 +21,7 @@ const About: React.FC = () => {
         <p>
           Elsker å gå i norsk natur, se gode (og dårlige) filmer, dra på
           roadtrips, lese en god bok, høre konstant på musikk, strikke noe litt halvbra til nevøen min eller.
-        </p>
-
+        </p> */}
       </section>
 
       {/* <section className='om-meg-two'>
