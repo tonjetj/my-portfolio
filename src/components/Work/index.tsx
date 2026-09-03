@@ -13,26 +13,28 @@ const Work: React.FC = () => {
 
       <article className='selectedWork'>
         <ul className='workList'>
-          {WorkList.map((work, index) => (
-            <li key={work.id} className='workItem'>
-              <div>
-                <h3>{work.title}</h3>
-              </div>
-              <div>
-                <p>{work.shortDescription.no}</p>
-              </div>
-              <div className='tag container work'>
-                {work.technologies.map((tech, index) => (
-                  <span key={index} className='tags work'>
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div>
-                <HiArrowRight size={48} />
-              </div>
-            </li>
-          ))}
+          {WorkList.slice()
+            .reverse()
+            .map((work, index) => (
+              <li key={work.id} className='workItem'>
+                <div>
+                  <h3>{work.title}</h3>
+                </div>
+                <div>
+                  <p>{work.shortDescription.no}</p>
+                </div>
+                <div className='tag container work'>
+                  {work.task.map((tech, index) => (
+                    <span key={index} className='tags work'>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  <HiArrowRight size={48} />
+                </div>
+              </li>
+            ))}
         </ul>
       </article>
     </section>

@@ -290,14 +290,13 @@ h1 {
   .tags {
     color: #21392d;
     border-radius: 30px; 
-    background-color: #f6f8b6;
     border: 1px solid #21392d;
-    padding: 5px 20px; 
+    padding: 0.25rem 1rem; 
     text-align: center; 
+    font-size: 12px; 
   }
 
   .tags.work {
-    background-color: #f3e8da00;
     }
 
 /* Buttons */

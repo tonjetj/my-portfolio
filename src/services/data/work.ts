@@ -20,6 +20,7 @@ export type WorkData = {
   languages: string[];
   frameworks: string[];
   technologies: string[];
+  task: string[];
   altText: { en: string; no: string };
   pillText: string;
 };
@@ -46,6 +47,7 @@ export const WorkList: WorkData[] = [
     languages: [],
     frameworks: [],
     technologies: ["Photoshop", "Adobe Illustrator", "Figma"],
+    task: ["Studentoppgave", "Redesign"],
     altText: {
       en: "Desktop homepage for redesign of Goodreads in Figma prototype",
       no: "Hjemmeside forslag av Goodreads i Figma prototype",
@@ -71,6 +73,7 @@ export const WorkList: WorkData[] = [
     languages: ["HTML", "CSS"],
     frameworks: [],
     technologies: ["VS Code", "Photoshop", "Netlify"],
+    task: ["Studentoppgave", "Responsiv nettside"],
     altText: {
       en: "Galactic Gamers homepage.",
       no: "Hjemmeside for Galactic Gamers.",
@@ -97,6 +100,7 @@ export const WorkList: WorkData[] = [
     languages: [],
     frameworks: [],
     technologies: ["Figma", "Photoshop"],
+    task: ["Eksamenoppgave", "Redesign", "Prototyping"],
     altText: {
       en: "Redesign for Hakunamatoma",
       no: "Redesign for Hakunamatoma",
@@ -121,7 +125,8 @@ export const WorkList: WorkData[] = [
     figmaUrlMobile: "",
     languages: ["HTML", "CSS"],
     frameworks: [],
-    technologies: ["Photoshop", "Netlify"],
+    technologies: ["HTML", "CSS", "Photoshop", "Netlify"],
+    task: ["Eksamenoppgave", "Responsiv nettside", "Semantikk"],
     altText: {
       en: "A culture festival webpage called 'Sildajazzen'.",
       no: "En kulturfestival nettside kalt 'Sildajazzen'.",
@@ -146,7 +151,8 @@ export const WorkList: WorkData[] = [
     figmaUrlMobile: "",
     languages: [],
     frameworks: ["Framer"],
-    technologies: ["Photoshop"],
+    technologies: ["Photoshop", "Framer"],
+    task: ["Eksamenoppgave", "Redesign", "UX/UI"],
     altText: {
       en: "A new design solution for architect bureau called 'Tind Bygg'.",
       no: "En ny designløsning for arkitektbureauet kalt 'Tind Bygg'.",
@@ -171,7 +177,8 @@ export const WorkList: WorkData[] = [
     figmaUrlMobile: "",
     languages: [],
     frameworks: ["Framer"],
-    technologies: ["Photoshop"],
+    technologies: ["Photoshop", "Framer"],
+    task: ["Eksamenoppgave", "Brukertesting", "Designløsning"],
     altText: {
       en: "An improved design solution for better user experience on H&M's website.",
       no: "En forbedret designløsning for bedre brukeropplevelse på H&M's nettside.",
@@ -196,7 +203,8 @@ export const WorkList: WorkData[] = [
     figmaUrlMobile: "",
     languages: [],
     frameworks: ["Framer"],
-    technologies: ["Photoshop"],
+    technologies: ["Photoshop", "Framer"],
+    task: ["Studentoppgave", "Prototyping"],
     altText: {
       en: "A personal portfolio in Framer'.",
       no: "En personlig portefølje i Framer'.",
