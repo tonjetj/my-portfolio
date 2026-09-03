@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { WorkList } from "../../services/data/work.ts";
 import { HiArrowRight } from "react-icons/hi2";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Work: React.FC = () => {
-  const [showAll, setShowAll] = useState(false);
-
   const displayedWorks = showAll
     ? WorkList.slice().reverse()
     : WorkList.slice().reverse().slice(0, 8);
@@ -36,7 +34,7 @@ const Work: React.FC = () => {
                 <div>
                   <p className='fadeIn'>{work.shortDescription.no}</p>
                 </div>
-                <div className="tag container work">
+                <div className='tag container work'>
                   {work.technologies.map((tech, index) => (
                     <span key={index} className='tags work fadeIn'>
                       {tech}

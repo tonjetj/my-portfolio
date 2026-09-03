@@ -1,5 +1,5 @@
 import React from "react";
-import { SkillList } from "../../services/data/skills.ts";
+// import { SkillList } from "../../services/data/skills.ts";
 // import meg_turbilde from "../../assets/images/meg_turbilde.jpg";
 // import unnamed3 from "../../assets/images/unnamed3.png";
 
