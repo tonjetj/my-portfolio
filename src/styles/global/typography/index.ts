@@ -6,12 +6,12 @@ export const fontFamily = {
 export const typography = {
   h1: {
     fontFamily: fontFamily.headline,
-    fontWeight: "300",
-    fontSize: "78px",
+    fontWeight: "700",
+    fontSize: "5rem",
   },
   h2: {
     fontFamily: fontFamily.headline,
-    fontWeight: "200",
+    fontWeight: "400",
     fontSize: "50px",
   },
   h3: {

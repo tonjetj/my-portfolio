@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
 
   return (
     <section aria-label='Contact me' id='contact'>
-      <h1>Get in touch!</h1>
+      <h2>Kontakt</h2>
       <div className='contact'>
         <a
           className='choice'

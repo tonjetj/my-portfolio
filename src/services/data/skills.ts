@@ -5,14 +5,15 @@ export type SkillsData = {
 export const SkillList: SkillsData[] = [
   {
     skill: [
+      "UX",
+      "UU",
       "HTML",
       "CSS",
-      "JavaScript",
       "React",
       "MUI",
       "Photoshop",
-      "Netlify",
       "Figma",
+      "Framer",
       "Adobe XD",
       "Git Bash",
       "REST API",

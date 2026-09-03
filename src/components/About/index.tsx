@@ -1,54 +1,43 @@
 import React from "react";
 import { SkillList } from "../../services/data/skills.ts";
-import { tagColors } from "../../styles/theme/index.ts";
-// import GoodreadsBookshelf from "react-goodreads-shelf";
+// import meg_turbilde from "../../assets/images/meg_turbilde.jpg";
+// import unnamed3 from "../../assets/images/unnamed3.png";
 
 const About: React.FC = () => {
-  function shuffleArray<T>(array: T[]): T[] {
-    return [...array].sort(() => Math.random() - 0.3);
-  }
-  const colors = shuffleArray(Object.values(tagColors));
-
   return (
-    <section aria-label='About me' id='about'>
-      <div
-        className='thisIsMe one'
-      >
-        <h1>Hello world!</h1>
-        <p>I'm Tonje. I love music, movies, reading books, nature,</p>
-        <ul>
-          <li>🎓 I have a professional degree in UX-design</li>
-          <li>
-            🎓 I have a higher professional degree in front-end development
-          </li>
-          <li>🌍 I'm from the west coast, but currently live near Oslo</li>
-        </ul>
-      </div>
-      <div
-        className='thisIsMe two'
-      >
-        <h2>Skills</h2>
+    <section aria-label='About me' id='about' className='om-meg-seksjon'>
+      <h2>Om meg</h2>
+
+      <section id='om-meg-one'>
+        <p>Tonje</p>
+        <div>
+          <p>Liker å gå i natur </p>
+        </div>
+        <p>
+          
+          Hei! Jeg heter Tonje. Jeg er en kreativ designer og utvikler med fokus
+          på enkle løsninger som er brukervennlige på tvers av grensesnitt.
+        </p>
+        <p>
+          Elsker å gå i norsk natur, se gode (og dårlige) filmer, dra på
+          roadtrips, lese en god bok, høre konstant på musikk, strikke noe litt halvbra til nevøen min eller.
+        </p>
+
+      </section>
+
+      {/* <section className='om-meg-two'>
         {SkillList.map((skills, index) => (
           <div key={index}>
             <ul className='tag container'>
               {SkillList[0].skill.map((item, index) => (
-                <li
-                  key={index}
-                  className='tags skills'
-                  style={{
-                    backgroundColor: colors[index % colors.length],
-                  }}
-                >
+                <li key={index} className='tags skills'>
                   {item}
                 </li>
               ))}
             </ul>
           </div>
         ))}
-      </div>
-      <div
-        className='thisIsMe three'
-      ></div>
+      </section> */}
     </section>
   );
 };

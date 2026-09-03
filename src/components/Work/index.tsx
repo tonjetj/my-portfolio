@@ -1,47 +1,56 @@
 import React, { useState } from "react";
 import { WorkList } from "../../services/data/work.ts";
 import { HiArrowRight } from "react-icons/hi2";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Work: React.FC = () => {
-  const [activeWork, setActiveWork] = useState<Work | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
+  const displayedWorks = showAll
+    ? WorkList.slice().reverse()
+    : WorkList.slice().reverse().slice(0, 8);
   return (
     <section aria-labelledby='my-selected-work' id='work' className='container'>
       <div className='sectionHeader'>
-        <h1 id='my-selected-work'>Work</h1>
+        <h2 id='my-selected-work' className='work-tittel fadeIn'>
+          Prosjekter
+        </h2>
       </div>
 
-      <div className='selectedWork'>
-        <article>
+      <article className='selectedWork'>
+        <AnimatePresence mode='popLayout'>
           <ul className='workList'>
-            {WorkList.slice()
-              .reverse()
-              .map((work) => (
-                <li
-                  key={work.id}
-                  className='workItem'
-                  onMouseEnter={() => setActiveWork(work)}
-                  onFocus={() => setActiveWork(work)}
-                  onMouseLeave={() => setActiveWork(work)}
-                >
-                  <h2>
-                    {work.id}. {work.title}
-                  </h2>
-                  {/* insert pills */}
+            {displayedWorks.map((work, index) => (
+              <motion.li
+                key={work.id}
+                className='workItem'
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 1, delay: index * 0.05 }}
+                layout
+              >
+                <div>
+                  <h3>{work.title}</h3>
+                </div>
+                <div>
+                  <p className='fadeIn'>{work.shortDescription.no}</p>
+                </div>
+                <div className="tag container work">
+                  {work.technologies.map((tech, index) => (
+                    <span key={index} className='tags work fadeIn'>
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div>
                   <HiArrowRight size={48} />
-                </li>
-              ))}
+                </div>
+              </motion.li>
+            ))}
           </ul>
-        </article>
-
-        <aside aria-live='polite' className='workPreview'>
-          {activeWork ? (
-            <img src={activeWork.img} alt={activeWork.altText} />
-          ) : (
-            <></>
-          )}
-        </aside>
-      </div>
+        </AnimatePresence>
+      </article>
     </section>
   );
 };
