@@ -74,7 +74,7 @@ export const WorkList: WorkData[] = [
     altText: {
       en: "Galactic Gamers homepage.",
       no: "Hjemmeside for Galactic Gamers.",
-    },          
+    },
     pillText: "",
   },
   {
@@ -84,7 +84,7 @@ export const WorkList: WorkData[] = [
       en: "Redesign and prototype in Figma",
       no: "Redesign og prototype i Figma",
     },
-    description:{
+    description: {
       en: "This was my student exam at Gokstad Akademiet for UX design. I had to create a prototype for desktop in Figma and redesign Matoma's homepage, www.hakunamatoma.com. Good user experience and UI were the two major focal points.  *All artwork and product photos in the design belongs to Matoma. ",
       no: "Dette var min studenteksamen hos Gokstad Akademiet for UX-design. Jeg måtte lage en prototype for desktop i Figma og redesigne Matomas hjemmeside, www.hakunamatoma.com. God brukeropplevelse og UI var de to viktige fokuspunktene.  *All kunstnerisk arbeid og produktfoto i designet tilhører Matoma. ",
     },
@@ -181,8 +181,14 @@ export const WorkList: WorkData[] = [
   {
     id: 7,
     title: "Portfolio",
-    shortDescription: {en: "Personal portfolio in Framer", no: "Personlig portefølje i Framer", no: "Personlig portefølje i Framer"},
-    description: {en: "Student assignment where I had to make a personal portfolio with Framer.", no: "Studentoppgave hvor jeg skulle lage en personlig portefølje med Framer."},
+    shortDescription: {
+      en: "Personal portfolio in Framer",
+      no: "Personlig portefølje i Framer",
+    },
+    description: {
+      en: "Student assignment where I had to make a personal portfolio with Framer.",
+      no: "Studentoppgave hvor jeg skulle lage en personlig portefølje med Framer.",
+    },
     img: framer_portfolio_v2,
     demoUrl: "https://tonjejenssen.framer.website/",
     githubUrl: "",
@@ -191,7 +197,10 @@ export const WorkList: WorkData[] = [
     languages: [],
     frameworks: ["Framer"],
     technologies: ["Photoshop"],
-    altText: {en: "A personal portfolio in Framer'.", no: "En personlig portefølje i Framer'."},
+    altText: {
+      en: "A personal portfolio in Framer'.",
+      no: "En personlig portefølje i Framer'.",
+    },
     pillText: "",
   },
 ];
