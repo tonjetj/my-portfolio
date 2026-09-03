@@ -293,7 +293,7 @@ h1 {
     border: 1px solid #21392d;
     padding: 0.25rem 1rem; 
     text-align: center; 
-    font-size: 12px; 
+    font-size: 16px; 
   }
 
   .tags.work {
